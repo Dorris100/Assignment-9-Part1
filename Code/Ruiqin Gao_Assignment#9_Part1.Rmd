@@ -31,7 +31,7 @@ ggplot(data = sexabuse,aes(x=csa, y=cpa))+
 ```{r}
 ggplot(sexabuse, aes(x=cpa, y=ptsd, color=csa)) +
   geom_point(aes(shape=factor(csa)))+
-  geom_smooth()+
+  geom_smooth(method="lm)+
   labs( x="Childhood physical abuse score (CPA)",
         y="Post-traumatic stress disorder score(PTSD)",
         color="Childhood sexual abuse status")+
